@@ -1,0 +1,39 @@
+.accommodation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 43px;
+  background: #f7f7f7;
+  border-radius: 25px;
+  .three_rent {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  .rent {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #ff6060, rgba(0, 0, 0, 0.9) 200%);
+    }
+    .title {
+      position: absolute;
+      top: 268px;
+      left: 20px;
+      bottom: 20px;
+      right: 20px;
+      width: 75px;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 18px;
+      display: flex;
+      align-items: flex-end;
+      color: #ffffff;
+    }
+  }
+}
