@@ -1,0 +1,21 @@
+.banner {
+  height: 223px;
+  position: relative;
+  margin-top: 63px;
+  .imgBanner {
+    position: absolute;
+    object-fit: cover;
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+  }
+  .title {
+    position: absolute;
+    top: 78px;
+    left: 373px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 48px;
+    color: #fff;
+  }
+}
