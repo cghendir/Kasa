@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  img {
+    width: 210.32px;
+    height: 68px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      text-align: center;
+      li {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+        color: #ff6060;
+        padding-left: 45px;
+      }
+    }
+  }
+}
