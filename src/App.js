@@ -1,15 +1,27 @@
-import Footer from './components/Footer.js';
+import React from 'react';
 import Home from './pages/Home.js';
 import './sass/App.scss';
+import About from './pages/About.js';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './pages/Layout.js';
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    /*<div>
       <div className="container">
         <Home />
       </div>
+      <About />
       <Footer />
-    </div>
+    </div>*/
   );
 }
 

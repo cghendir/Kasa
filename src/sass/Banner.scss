@@ -2,6 +2,15 @@
   height: 223px;
   position: relative;
   margin-top: 63px;
+  &::after {
+    position: absolute;
+    background: rgba($color: #000, $alpha: 0.3);
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 25px;
+  }
+
   .imgBanner {
     position: absolute;
     object-fit: cover;
@@ -11,11 +20,15 @@
   }
   .title {
     position: absolute;
-    top: 78px;
-    left: 373px;
-    font-family: 'Montserrat';
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
     font-weight: 500;
     font-size: 48px;
+    line-height: 68px;
     color: #fff;
   }
 }

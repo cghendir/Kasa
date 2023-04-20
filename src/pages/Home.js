@@ -1,12 +1,11 @@
 import Accommodation from '../components/Accommodation';
 import Banner from '../components/Banner';
-import Header from '../components/Header';
+import imgbanner from '../images/Img-Banner.jpg';
 
 function Home() {
   return (
     <div>
-      <Header />
-      <Banner title="Chez vous, partout et ailleurs" />
+      <Banner title="Chez vous, partout et ailleurs" src={imgbanner} />
       <Accommodation />
     </div>
   );
