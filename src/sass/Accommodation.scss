@@ -1,19 +1,29 @@
 .accommodation {
   display: flex;
-  flex-direction: column;
   margin-top: 43px;
   background: #f7f7f7;
   border-radius: 25px;
-  .three_rent {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 50px 0 50px;
+
+  .three_rent_first {
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    padding: 56px 50px 25px 50px;
+  }
+  .three_rent_second {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px 43px 50px;
   }
   .rent {
+    width: 30%;
     position: relative;
-    width: 340px;
     height: 340px;
     border-radius: 10px;
+    margin-bottom: 50px;
 
     img {
       height: 100%;

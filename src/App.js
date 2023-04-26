@@ -15,13 +15,6 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-    /*<div>
-      <div className="container">
-        <Home />
-      </div>
-      <About />
-      <Footer />
-    </div>*/
   );
 }
 

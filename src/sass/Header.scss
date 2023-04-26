@@ -9,20 +9,23 @@
   nav {
     display: flex;
     align-items: center;
-    ul {
+    a {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 142.6%;
+      /* or 34px */
+
       display: flex;
-      text-align: center;
-      li {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        display: flex;
-        align-items: flex-end;
-        text-align: right;
-        color: #ff6060;
-        padding-left: 45px;
-      }
+      align-items: flex-end;
+      text-align: right;
+
+      color: #ff6060;
+      padding-left: 57px;
+    }
+    .active {
+      text-decoration: underline;
     }
   }
 }
