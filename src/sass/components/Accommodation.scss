@@ -5,25 +5,26 @@
   border-radius: 25px;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 50px 50px 0 50px;
+  @include mobile-only {
+    flex-direction: column;
+    padding: 0;
+    background: none;
+    margin-top: 22px;
+  }
 
-  .three_rent_first {
-    display: flex;
-    justify-content: space-between;
-    padding: 56px 50px 25px 50px;
-  }
-  .three_rent_second {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 50px 43px 50px;
-  }
   .rent {
     width: 30%;
     position: relative;
     height: 340px;
     border-radius: 10px;
     margin-bottom: 50px;
+    @include mobile-only {
+      width: 100%;
+      margin-bottom: 20px;
+      height: 255px;
+    }
 
     img {
       height: 100%;
@@ -37,13 +38,16 @@
       left: 20px;
       bottom: 20px;
       right: 20px;
-      width: 75px;
+      width: 305px;
       font-family: 'Montserrat';
       font-weight: 500;
       font-size: 18px;
       display: flex;
       align-items: flex-end;
       color: #ffffff;
+      @include mobile-only {
+        top: 240px;
+      }
     }
   }
 }

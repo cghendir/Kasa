@@ -1,6 +1,17 @@
-@import 'Page.scss';
-@import 'Header.scss';
-@import 'Banner.scss';
-@import 'Accommodation.scss';
-@import 'Accordion.scss';
-@import 'Footer.scss';
+@import './utils/Variables.scss';
+@import './utils/Mixins.scss';
+
+@import './base/Page.scss';
+
+@import './components/Banner.scss';
+@import './components/Accommodation.scss';
+@import './components/Accordion.scss';
+@import './components/Tag.scss';
+@import './components/Star.scss';
+@import './components/Slider.scss';
+
+@import './layouts/Header.scss';
+@import './layouts/Footer.scss';
+
+@import './pages/AccommodationSheet.scss';
+@import './pages/Error.scss';

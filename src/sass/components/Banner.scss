@@ -2,6 +2,10 @@
   height: 223px;
   position: relative;
   margin-top: 63px;
+  @include mobile-only {
+    height: 111px;
+    margin-top: 20px;
+  }
   &::after {
     position: absolute;
     background: rgba($color: #000, $alpha: 0.3);
@@ -9,14 +13,20 @@
     height: 100%;
     content: '';
     border-radius: 25px;
+    @include mobile-only {
+      border-radius: 10px;
+    }
   }
 
   .imgBanner {
     position: absolute;
     object-fit: cover;
-    height: 223px;
+    height: 100%;
     width: 100%;
     border-radius: 25px;
+    @include mobile-only {
+      border-radius: 10px;
+    }
   }
   .title {
     position: absolute;
@@ -30,5 +40,19 @@
     font-size: 48px;
     line-height: 68px;
     color: #fff;
+    @include mobile-only {
+      font-size: 24px;
+      line-height: 24px;
+      text-align: start;
+      width: 220px;
+      left: 125px;
+    }
+  }
+}
+.about {
+  .banner {
+    @include mobile-only {
+      height: 255px;
+    }
   }
 }

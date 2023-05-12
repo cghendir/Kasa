@@ -1,0 +1,106 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 108.5px 0 108.5px;
+  @include mobile-only {
+    padding: 0;
+  }
+  &_title {
+    width: 100%;
+    background-color: $color-primary;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    z-index: 1;
+    padding: 6px 15px 7px 18px;
+    @include mobile-only {
+      margin-top: 30px;
+      padding: 5.5px 7px 5.5px 11.5px;
+    }
+    &--text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 34px;
+      color: #ffffff;
+      @include mobile-only {
+        font-size: 13px;
+        line-height: 19px;
+      }
+    }
+  }
+  &_icon {
+    display: flex;
+    img {
+      @include mobile-only {
+        width: 16px;
+      }
+    }
+  }
+  &_content {
+    width: 100%;
+    margin-top: -10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+    &--text {
+      display: flex;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px;
+      color: #ff6060;
+      padding: 20px;
+      white-space: normal;
+      text-align: justify;
+      @include mobile-only {
+        font-size: 12px;
+        line-height: 17px;
+      }
+    }
+    ul {
+      padding: 20px;
+    }
+    &--list {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+
+      color: #ff6060;
+      list-style-type: none;
+    }
+  }
+}
+
+.accommodationAccodion {
+  display: flex;
+  justify-content: space-between;
+  @include mobile-only {
+    flex-direction: column;
+  }
+  .accordion {
+    width: 47%;
+    padding: 0;
+    @include mobile-only {
+      width: 100%;
+    }
+    &_title {
+      margin-top: 26px;
+      &--text {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+    &_content--text {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}

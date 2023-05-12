@@ -1,0 +1,83 @@
+.housing-bar {
+  display: flex;
+  justify-content: space-between;
+  @include mobile-only {
+    flex-direction: column;
+  }
+}
+.accommodationSheet {
+  display: flex;
+  flex-direction: column;
+  &_title {
+    padding-bottom: 20px;
+    @include mobile-only {
+      padding-bottom: 10px;
+    }
+    p:nth-child(1) {
+      margin: 0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 51px;
+      display: flex;
+      align-items: flex-end;
+
+      color: #ff6060;
+      @include mobile-only {
+        font-size: 18px;
+        line-height: 26px;
+        padding-bottom: 5px;
+      }
+    }
+    p:nth-child(2) {
+      margin: 0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+
+      display: flex;
+      align-items: flex-end;
+
+      color: #ff6060;
+      @include mobile-only {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  &_name {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    @include mobile-only {
+      padding: 0;
+    }
+    p {
+      margin: 0 10px 0 0;
+      width: 93px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      display: flex;
+      align-items: flex-end;
+      text-align: right;
+      color: #ff6060;
+      @include mobile-only {
+        font-size: 12px;
+        line-height: 17px;
+      }
+    }
+    img {
+      width: 64px;
+      height: 64px;
+      background: #c4c4c4;
+      border-radius: 50%;
+      @include mobile-only {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

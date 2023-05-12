@@ -3,18 +3,17 @@ import logo from '../images/Logo.png';
 
 function Header() {
   const location = useLocation();
-  console.log(location);
   return (
     <div>
       <div className="header">
         <img src={logo} alt="logo de Kasa" />
         <nav>
-          <Link to="/" className={location.pathname === '/' ? 'active' : false}>
+          <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
             Accueil
           </Link>
           <Link
             to="/about"
-            className={location.pathname === '/about' ? 'active' : false}
+            className={location.pathname === '/about' ? 'active' : ''}
           >
             A Propos
           </Link>

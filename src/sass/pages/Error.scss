@@ -1,0 +1,44 @@
+.erreur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff6060;
+  font-style: normal;
+  h1 {
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 411px;
+    text-align: center;
+    margin: 175px 0 66px 0;
+    @include mobile-only {
+      font-size: 96px;
+      line-height: 137px;
+      margin: 199px 0 11px 0;
+    }
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 51px;
+    margin: 0 0 182px 0;
+    @include mobile-only {
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      margin: 0 0 133px 0;
+      width: 255px;
+    }
+  }
+  &-lien {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-decoration-line: underline;
+    color: #ff6060;
+    margin-bottom: 111px;
+    @include mobile-only {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

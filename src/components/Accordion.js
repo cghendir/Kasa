@@ -3,7 +3,7 @@ import { useState } from 'react';
 import iconUp from '../images/Icon-up.png';
 import iconDown from '../images/Icon-down.png';
 
-function Accodion({ title, content }) {
+function Accordion({ title, content }) {
   const collapseRef = createRef();
 
   const [active, setActive] = useState(false);
@@ -36,10 +36,20 @@ function Accodion({ title, content }) {
         ref={collapseRef}
         style={collapseStyle}
       >
-        <p className="accordion_content--text">{content}</p>
+        {Array.isArray(content) ? (
+          <ul>
+            {content.map((item, index) => (
+              <li className="accordion_content--list" key={index}>
+                {item}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="accordion_content--text">{content}</p>
+        )}
       </div>
     </div>
   );
 }
 
-export default Accodion;
+export default Accordion;

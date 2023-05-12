@@ -4,6 +4,8 @@ import './sass/App.scss';
 import About from './pages/About.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './pages/Layout.js';
+import AccommodationSheet from './pages/AccomodationSheet.js';
+import Error from './pages/Error.js';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/accommodation/:id" element={<AccommodationSheet />} />
+          <Route path="*" element={<Error />} />
         </Route>
       </Routes>
     </BrowserRouter>

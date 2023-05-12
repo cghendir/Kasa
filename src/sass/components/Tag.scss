@@ -1,0 +1,28 @@
+.tags {
+  display: flex;
+  @include mobile-only {
+    padding-bottom: 16px;
+  }
+  &_component {
+    background: #ff6060;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  &_name {
+    margin: 0;
+    padding: 3px 40px 3px 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    text-align: center;
+
+    color: #ffffff;
+    @include mobile-only {
+      font-size: 10px;
+      line-height: 14px;
+      padding: 2px 30px;
+    }
+  }
+}

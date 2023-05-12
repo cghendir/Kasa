@@ -1,8 +1,12 @@
-function Accommodation() {
+import { Link } from 'react-router-dom';
+
+function Accommodation({ link, cover, title }) {
   return (
     <div className="rent">
-      <img src="" alt="" />
-      <div className="title">Titre de la location</div>
+      <Link to={link}>
+        <img src={cover} alt="" />
+        <div className="title"> {title} </div>
+      </Link>
     </div>
   );
 }
