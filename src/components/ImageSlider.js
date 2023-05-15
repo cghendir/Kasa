@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { SliderData } from './SliderData';
 import ArrowLeft from '../images/ArrowLeft.png';
 import ArrowRight from '../images/ArrowRight.png';
 
 function ImageSlider({ slides }) {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
-  console.log(length);
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -28,13 +26,20 @@ function ImageSlider({ slides }) {
         className="right-arrow"
         onClick={nextSlide}
       />
-      {SliderData.map((slide, index) => {
+      {slides.map((slide, index) => {
         return (
           <div
             className={index === current ? 'slide slide-active' : 'slide'}
             key={index}
           >
-            <img src={slide.image} alt="" className="slider_img" />
+            {index === current && (
+              <img src={slide} alt="" className="slider_img" />
+            )}
+            {index === current && length > 1 && (
+              <span className="slider_number">
+                {current + 1}/{length}
+              </span>
+            )}
           </div>
         );
       })}

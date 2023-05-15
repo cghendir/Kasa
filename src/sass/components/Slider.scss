@@ -46,12 +46,32 @@
       border-radius: 10px;
     }
   }
+  &_number {
+    display: block;
+    position: absolute;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #ffffff;
+
+    left: 48%;
+    top: 86%;
+    @include mobile-only {
+      display: none;
+    }
+  }
   .slide {
     opacity: 0;
     height: 100%;
     position: absolute;
     transition: opacity 0.5s ease;
     &-active {
+      width: 100%;
       opacity: 1;
     }
   }
