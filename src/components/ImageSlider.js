@@ -19,13 +19,22 @@ function ImageSlider({ slides }) {
 
   return (
     <div className="slider">
-      <img src={ArrowLeft} alt="" className="left-arrow" onClick={prevSlide} />
-      <img
-        src={ArrowRight}
-        alt=""
-        className="right-arrow"
-        onClick={nextSlide}
-      />
+      {length > 1 && (
+        <>
+          <img
+            src={ArrowLeft}
+            alt=""
+            className="left-arrow"
+            onClick={prevSlide}
+          />
+          <img
+            src={ArrowRight}
+            alt=""
+            className="right-arrow"
+            onClick={nextSlide}
+          />
+        </>
+      )}
       {slides.map((slide, index) => {
         return (
           <div

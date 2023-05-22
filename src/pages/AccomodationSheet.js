@@ -4,6 +4,7 @@ import Star from '../components/Star';
 import ImageSlider from '../components/ImageSlider';
 import useFetch from '../utils/Fetch';
 import { useParams } from 'react-router-dom';
+import Error from './Error.js';
 
 function AccommodationSheet() {
   const annonces = useFetch();
@@ -14,6 +15,9 @@ function AccommodationSheet() {
   let rightAnnonce = null;
   if (annonces.data) {
     rightAnnonce = annonces.data.find((annonce) => annonce.id === annonceId);
+  }
+  if (!rightAnnonce) {
+    return <Error />;
   }
 
   return (
