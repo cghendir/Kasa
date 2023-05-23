@@ -61,7 +61,6 @@
 
     left: 48%;
     top: 86%;
-    text-shadow: 2px 2px 2px $color-primary;
     @include mobile-only {
       display: none;
     }

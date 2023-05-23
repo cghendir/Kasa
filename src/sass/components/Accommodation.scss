@@ -33,7 +33,11 @@
       cursor: pointer;
       &:hover {
         &::after {
-          opacity: 0.2;
+          background: linear-gradient(
+            180deg,
+            rgba(255, 96, 96, 0.2) 80%,
+            rgba(0, 0, 0, 0.8) 100%
+          );
         }
       }
       &::after {
@@ -44,8 +48,12 @@
         left: 0;
         bottom: 0;
         z-index: 0;
-        opacity: 0;
-        background: linear-gradient(180deg, #ff6060, rgba(0, 0, 0, 0.9) 200%);
+        opacity: 1;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 60%,
+          rgba(0, 0, 0, 0.8) 100%
+        );
         transition: opacity 550ms;
         border-radius: 10px;
       }
@@ -59,8 +67,8 @@
       object-fit: cover;
     }
     .title {
-      text-shadow: 2px 2px 2px $color-primary;
       position: absolute;
+      z-index: 10;
       top: 268px;
       left: 20px;
       bottom: 20px;
